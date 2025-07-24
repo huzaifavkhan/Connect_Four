@@ -107,7 +107,6 @@ for generation in range(generations):
 
     # Select parents for reproduction sorting an array of 50 population size and sorting it on best fitness value then sorting it from worst fitness to best fitness and picking the best 10 parents
     parents = [population[i] for i in sorted(range(len(population)), key=lambda x: fitness_scores[x], reverse=True)[:parents_size]]
-    print("Parents = "+ parents)
 
     # Reproduction (crossover)
     offspring = []
